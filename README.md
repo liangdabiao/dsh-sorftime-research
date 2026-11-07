@@ -4,6 +4,13 @@
 
 技能来自 [amazon-sorftime-research-MCP-skill](https://github.com/liangdabiao/amazon-sorftime-research-MCP-skill)（liangdabiao）。
 
+
+## 安装
+
+```bash
+dsh plugin --profile web add dsh-sorftime-research
+```
+
 ## 许可
 
 MIT
