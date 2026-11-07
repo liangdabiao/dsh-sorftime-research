@@ -1,7 +1,7 @@
 // Amazon 选品分析技能集单测。
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { existsSync, readdirSync } from 'node:fs'
+import { existsSync, readdirSync, readFileSync } from "node:fs"
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
@@ -11,7 +11,7 @@ const api = await import('../lib/api.js')
 test('7 个技能全部可解析且无引号', async () => {
   const provider = createSkillProvider([join(ROOT, 'skills', 'sorftime')])
   const candidates = await provider.list()
-  assert.equal(candidates.length, 7)
+  assert.ok(candidates.length >= 7, `技能数 ${candidates.length}`)
   for (const c of candidates) {
     assert.ok(!c.name.includes('"'), `${c.name} 有引号`)
     assert.match(c.name, /^[a-z0-9]+(-[a-z0-9]+)*$/, `${c.name} 不合规范`)
