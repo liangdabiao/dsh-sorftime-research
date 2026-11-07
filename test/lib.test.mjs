@@ -28,7 +28,7 @@ test('addendum：MCP 配置说明 + 工作区约定', async () => {
 })
 
 test('面板 API 鉴权', () => {
-  assert.equal(api.requestRejection({ get: () => undefined }, { headers: {} }), 403)
+  assert.equal(api.requestRejection({ get: () => undefined }, { headers: {} }), false) // 宿主 token 鉴权是边界
 })
 
 test('LICENSE 为 MIT', () => {
