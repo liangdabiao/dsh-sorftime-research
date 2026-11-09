@@ -2,6 +2,7 @@
 
 9 套 Amazon 选品分析方法技能（Sorftime / 卖家精灵 / Sif / 西柚）+ 一本「研究记录」：
 每次分析完把结论、用过的方法、报告路径存下来，下次直接翻。侧栏是「选品研究」工作台（布局对齐「投资尽调」）。
+<img width="2067" height="1097" alt="image" src="https://github.com/user-attachments/assets/4ae6bd6f-0721-47ca-b33d-0f335dd62fbf" />
 
 ## 装了什么
 
