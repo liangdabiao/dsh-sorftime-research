@@ -1,1 +1,6 @@
-{ "meta": { "title": "Sorftime Research", "description": "7 Amazon MCP analysis skills." } }
+{
+  "meta": {
+    "title": "Amazon selection research",
+    "description": "Nine Amazon research methodologies (product/keyword/review/listing/competitor) plus saved research records (verdict, methods, report path) and generation history. Sidebar workbench with overview, records, history, new research, skill library and workflow."
+  }
+}

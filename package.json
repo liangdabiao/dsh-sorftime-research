@@ -1,7 +1,7 @@
 {
   "name": "dsh-sorftime-research",
-  "version": "0.2.0",
-  "description": "Amazon 选品分析工作台：9 个选品方法技能（产品研究/关键词/类目/评论/Sif/卖家精灵…）关键词匹配 + 完整流程取用。sorftime_module 工具 + 侧栏技能库。",
+  "version": "0.3.0",
+  "description": "Amazon 选品研究工作台：9 套选品/关键词/评论/Listing/竞品分析方法技能 + sorftime_module（查方法，自动记账）+ sorftime_research（研究记录：结论卡 go/watch/no-go、方法、报告路径）+ 侧栏工作台（概览 / 研究记录 / 生成历史 / 发起研究 / 方法技能库 / 研究流程）。",
   "license": "MIT",
   "type": "module",
   "main": "src/host.js",
@@ -17,6 +17,7 @@
     "src",
     "dist",
     "lib",
+    "lab",
     "skills",
     "locale/*.json",
     "cordis.patch.yml",
@@ -28,7 +29,8 @@
     "dsh-plugin",
     "deepseek-harness",
     "amazon",
-    "sorftime"
+    "sorftime",
+    "selection"
   ],
   "engines": {
     "node": "^22.19.0 || >=24.0.0",
@@ -50,6 +52,7 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "test": "node test/lib.test.mjs",
+    "selftest": "node scripts/selftest.mjs",
     "prepack": "npm run build"
   }
 }
